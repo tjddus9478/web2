@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+<meta charset="utf-8">
+<title>WEB1 - Welcome</title>
+
+<script>
+function  LinksSetColor(color) {
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length) {
+    alist[i].style.color = color;
+    i = i + 1;
+  }
+}
+function BodySetColor(color) {
+  document.querySelector('body').style.color = color;
+}
+function BodySetBackgroundColor(color) {
+  document.querySelector('body').style.backgroundColor = color;
+}
+var Body = {
+setColor: function(color) {
+    document.querySelector('body').style.color = color;
+  },
+  setBackgroundColor: function(color) {
+      document.querySelector('body').style.backgroundColor = color;
+    }
+}
+var Links = {
+  setColor: function(color) {
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+      alist[i].style.color = color;
+      i = i + 1;
+    }
+  }
+}
+function nightDayHandler(self) {
+  var target = document.querySelector('body');
+  if(self.value == 'night') {
+    Body.setBackgroundColor('black');
+    Body.setColor('white');
+    self.value = 'day'
+
+Links.setColor('powderblue');
+  } else {
+    Body.setBackgroundColor('white');
+    Body.setColor('black');
+    self.value = 'night';
+
+  Links.setColor('black');
+  }
+}
+</script>
+</head>
+<body>
+<style>
+
+  a {
+      color:black;
+      text-decoration: none;
+  }
+  h1{
+    font-size:45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0px;
+    padding:20px;
+  }
+  #grid ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns:150px 1fr;
+  }
+  #article{
+    padding-left: 25px;
+  }
+  @media(max-width: 800px) {
+    #grid {
+      display: block;
+    }
+    #grid ol {
+        border-right: none;
+    }
+    h1{
+      border-bottom: none;
+    }
+  }
+</style>
+</head>
+<body>
+<link rel="stylesheet" href="Style.css"/>
+
+</body>
+<body>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
+  
+<h1><a href="index.html">WEB</a></h1>
+
+  <div id="grid">
+<ol>
+<li><a href="1.html">HTML</a></li>
+<li><a href="2.html">CSS</a></li>
+<li><a href="3.html">Javascript</a></li>
+</ol>
+<div id="article">
+<h2 style="background-color: powderblue;"><span style="font-weight: bold;">WEB이란 무엇인가?</span></h2>
+<p>Web is a computer programming system created by Donald E. Knuth as the first implementation of what he called "literate programming": the idea that one could create software as works of literature, by embedding source code inside descriptive text, rather than the reverse (as is common practice in most programming languages), in an order that is convenient for exposition to human readers, rather than in the order demanded by the compiler.</p>
+</body>
+</HTML>
