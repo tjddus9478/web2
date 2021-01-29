@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <HTML>
     <head>
+<title>WEB1 - Javascript</title>
 <meta charset="utf-8">
-<title>WEB1 - Welcome</title>
-
 <script>
 function  LinksSetColor(color) {
   var alist = document.querySelectorAll('a');
@@ -72,10 +71,8 @@ Links.setColor('powderblue');
   #grid ol{
     border-right:1px solid gray;
     width:100px;
-    margin:0;
+    margin:0px;
     padding:20px;
-    style= font-size:30px; font-weight:bold;
-
   }
   #grid {
     display: grid;
@@ -100,25 +97,23 @@ Links.setColor('powderblue');
 <body>
 <link rel="stylesheet" href="Style.css"/>
 
-</body>
+</head>
 <body>
   <input type="button" value="night" onclick="
     nightDayHandler(this);
     ">
-
 <h1><a href="index.html">WEB</a></h1>
 
-<div id="grid">
+  <div id="grid">
 <ol>
 <li><a href="1.정의.html">HTML</a></li>
 <li><a href="2.정의.html">CSS</a></li>
-<li><a href="3.정의.html">Javascript</a></li>
+<li><a href="3.정의.html" style="color:green; font-size: 18px; font-weight:bold; text-decoration:underline;">Javascript</a></li>
+-<a href="3.정의.html" style="color:green; text-decoration:underline;">정의</a>
+<br>-<a href="3.태그.html">태그</a>
 </ol>
 <div id="article">
-<h2 style="background-color: powderblue;"><span style="font-weight: bold;">발표의 목적</span></h2>
-<h3><span style="font-weight: bold;"> HTML, CSS, Javascript</span></h3>
-→ HTML, CSS, Javascript란 무엇이며 어떠한 특성을 갖고 있는가.
-<br>→ HTML, CSS, Javascript의 어떤 수식을 통해 어떤 구현을 할 수 있으며 이로 인한 장점은 무엇인가.
-
+<h2 style="background-color: powderblue;"><span style="font-weight: bold;">Javascript란 무엇인가?</span></h2>
+<p><li> <span style="font-weight: bold;">HTML</span>, <span style="font-weight: bold;">CSS</span>가 정적인 페이지를 만드는 언어들이었다면, <span style="font-weight: bold;">Javascript</span>는 웹페이지의 행동이나 응용프로그램. <span style="font-weight: bold;">집에 설치된 기능</span>이라고 정의할 수 있다.</li> <li><span style="font-weight: bold;">HTML</span>, <span style="font-weight: bold;">CSS</span>에서 부족한 부분을 <span style="font-weight: bold;">보충하기 위해</span> 사용하는 언어라고도 말한다.</li> <li> <span style="font-weight: bold;">HTML</span>이 정보라고 하는 멈춰있는 이미지를 그리는 것이라면, <span style="font-weight: bold;">Javascript</span>는 정보라고 하는 이미지를 마치 <span style="font-weight: bold;">영화처럼 움직이게</span> 한다는 장점이 있다.</li> <li><span style="font-weight: bold;"> Javascript</span>를 통해 웹페이지 내에서 <span style="font-weight: bold;">계산과 차트, 지도, 야간모드, 경고박스</span> 등을 구현할 수 있다.</li></p>
 </body>
 </HTML>

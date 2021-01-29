@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <HTML>
     <head>
+<title>WEB1 - CSS</title>
 <meta charset="utf-8">
-<title>WEB1 - Welcome</title>
-
 <script>
 function  LinksSetColor(color) {
   var alist = document.querySelectorAll('a');
@@ -72,10 +71,8 @@ Links.setColor('powderblue');
   #grid ol{
     border-right:1px solid gray;
     width:100px;
-    margin:0;
+    margin:0px;
     padding:20px;
-    style= font-size:30px; font-weight:bold;
-
   }
   #grid {
     display: grid;
@@ -98,27 +95,26 @@ Links.setColor('powderblue');
 </style>
 </head>
 <body>
-<link rel="stylesheet" href="Style.css"/>
-
-</body>
-<body>
   <input type="button" value="night" onclick="
     nightDayHandler(this);
     ">
-
 <h1><a href="index.html">WEB</a></h1>
 
-<div id="grid">
+  <div id="grid">
 <ol>
 <li><a href="1.정의.html">HTML</a></li>
-<li><a href="2.정의.html">CSS</a></li>
+<li><a href="2.정의.html" style="color:green; font-size: 18px; font-weight:bold; text-decoration:underline;">CSS</a></li>
+-<a href="2.정의.html" style="color:green; text-decoration:underline;"">정의</a>
+<br>-<a href="2.태그.html">태그</a>
 <li><a href="3.정의.html">Javascript</a></li>
 </ol>
 <div id="article">
-<h2 style="background-color: powderblue;"><span style="font-weight: bold;">발표의 목적</span></h2>
-<h3><span style="font-weight: bold;"> HTML, CSS, Javascript</span></h3>
-→ HTML, CSS, Javascript란 무엇이며 어떠한 특성을 갖고 있는가.
-<br>→ HTML, CSS, Javascript의 어떤 수식을 통해 어떤 구현을 할 수 있으며 이로 인한 장점은 무엇인가.
-
+<h2 style="background-color: powderblue;"><span style="font-weight: bold;">CSS란 무엇인가?</span></h2>
+<p><li><span style="font-weight: bold;">CSS</span>란 Cascading Style Sheets의 약자로 웹페이지의 모양. 즉, <span style="font-weight: bold;">인테리어</span>를 맡는 언어이다.</li> <li> 만약 1억 개의 폰트 색상을 red에서 black으로 바꿔야 된다면,<font> 태그 1억개를 일일이 바꿔야한다.
+<br> 하지만 <span style="font-weight: bold;">CSS</span>는 "color:red;"라는 코드를 "color:black;"으로만 바꾸면 순식간에 1억 개의 폰트 색상이 바뀌는 효과를 얻을 수 있으며 이것을 <span style="font-weight: bold;">중복의 제거</span>라고 한다.
+<p style="margin-top:20px;"><iframe width="1280" height="720" src="https://www.youtube.com/embed/Ok0bBJPtgJI?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+</div>
+</div>
 </body>
 </HTML>

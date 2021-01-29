@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <HTML>
     <head>
+<title>WEB1 - CSS</title>
 <meta charset="utf-8">
-<title>WEB1 - Welcome</title>
-
 <script>
 function  LinksSetColor(color) {
   var alist = document.querySelectorAll('a');
@@ -72,10 +71,8 @@ Links.setColor('powderblue');
   #grid ol{
     border-right:1px solid gray;
     width:100px;
-    margin:0;
+    margin:0px;
     padding:20px;
-    style= font-size:30px; font-weight:bold;
-
   }
   #grid {
     display: grid;
@@ -98,27 +95,24 @@ Links.setColor('powderblue');
 </style>
 </head>
 <body>
-<link rel="stylesheet" href="Style.css"/>
-
-</body>
-<body>
   <input type="button" value="night" onclick="
     nightDayHandler(this);
     ">
-
 <h1><a href="index.html">WEB</a></h1>
 
-<div id="grid">
+  <div id="grid">
 <ol>
 <li><a href="1.정의.html">HTML</a></li>
-<li><a href="2.정의.html">CSS</a></li>
+<li><a href="2.정의.html" style="color:green; font-size: 18px; font-weight:bold; text-decoration:underline;">CSS</a></li>
+-<a href="2.정의.html">정의</a>
+<br>-<a href="2.태그.html" style="color:green; text-decoration:underline;">태그</a>
 <li><a href="3.정의.html">Javascript</a></li>
 </ol>
 <div id="article">
-<h2 style="background-color: powderblue;"><span style="font-weight: bold;">발표의 목적</span></h2>
-<h3><span style="font-weight: bold;"> HTML, CSS, Javascript</span></h3>
-→ HTML, CSS, Javascript란 무엇이며 어떠한 특성을 갖고 있는가.
-<br>→ HTML, CSS, Javascript의 어떤 수식을 통해 어떤 구현을 할 수 있으며 이로 인한 장점은 무엇인가.
-
+<h2 style="background-color: powderblue;"><span style="font-weight: bold;">태그의 예시</span></h2>
+<p>
+</p>
+</div>
+</div>
 </body>
 </HTML>
